@@ -1,0 +1,30 @@
+{
+  "name": "buffer-factory",
+  "version": "1.0.0-alpha",
+  "description": "Make it no pain to create a Buffer object by encapsulate Buffer.from an new Buffer().",
+  "main": "index.js",
+  "scripts": {},
+  "engines": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imnemo/buffer-factory.git"
+  },
+  "keywords": [
+    "buffer",
+    "factory",
+    "new Buffer()",
+    "Buffer.from",
+    "addon",
+    "nodejs",
+    "npm",
+    "node-module"
+  ],
+  "author": "imnemo <oncoding1988@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imnemo/buffer-factory/issues"
+  },
+  "homepage": "https://github.com/imnemo/buffer-factory#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
