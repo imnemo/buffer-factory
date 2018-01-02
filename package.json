@@ -1,9 +1,12 @@
 {
   "name": "buffer-factory",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0",
   "description": "Make it no pain to create a Buffer object by encapsulate Buffer.from an new Buffer().",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha --reporter spec",
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov | coveralls"
+  },
   "engines": {},
   "repository": {
     "type": "git",
@@ -26,5 +29,9 @@
   },
   "homepage": "https://github.com/imnemo/buffer-factory#readme",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "4.1.0",
+    "nyc": "11.4.1"
+  }
 }
