@@ -1,7 +1,7 @@
 var spawn = require('child_process').spawn;
 
 var mochaVersion = 'mocha@4.1.0'
-if(process.version < 'v4.0.0'){
+if (process.version < 'v4.0.0') {
   mochaVersion = 'mocha@1.0.0'
 }
 
@@ -10,6 +10,7 @@ if(process.version < 'v4.0.0'){
 var npm = spawn('npm', ['install', mochaVersion, "-D"], {
   cwd: process.cwd()
   , stdio: 'inherit'
+  , shell: true
 })
 
 // npm.stdout.on('data', (data) => {
