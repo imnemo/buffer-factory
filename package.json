@@ -4,8 +4,7 @@
   "description": "Make it no pain to create a Buffer object by encapsulate Buffer.from an new Buffer().",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec",
-    "preinstall": "node ./preinstall.js"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "runkitExampleFilename": "example/runkit.js",
   "engines": {},
