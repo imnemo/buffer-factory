@@ -30,7 +30,7 @@ bufferFactory('2b', 'hex')
 
 ## Implementation
 
-If `Buffer.from` is accessible, this module is preffered to use it.  
+`Buffer.from` is preffered to be used when it's accessible.
 
 `Buffer.from` is added from v5.10.0, as the api document shows. But some node version, v4.2.6 for example, `Buffer.from` is a function, however, there is an error when you call `Buffer.from(string, encoding)`(error like `hex is not function`). So I also take the node version into account.  
 
