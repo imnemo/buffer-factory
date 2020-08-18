@@ -32,13 +32,20 @@ var makeBufferByNewBuffer = function () {
   return new (Function.prototype.bind.apply(Buffer, args));
 }
 
+/**
+ * @type function(...bufferParams: any[]):Buffer
+ */
+let bufferFactory;
+
 /*
  * Buffer.from is added in v5.10.0, as the api document shows. But some node version,
  * v4.2.6 for example, Buffer.from is function, however, there is an error when you call
  * `Buffer.from(string, encoding)`(error like `hex is not function`).
  */
 if (typeof Buffer.from === 'function' && isLargerOrEqual(process.version, "v5.10.0")) {
-  module.exports = makeBufferByBufferFrom;
+  bufferFactory = makeBufferByBufferFrom;
 } else {
-  module.exports = makeBufferByNewBuffer;
+  bufferFactory = makeBufferByNewBuffer;
 }
+
+module.exports = bufferFactory;
