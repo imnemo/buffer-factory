@@ -25,7 +25,10 @@ This module has been well unit tested and documented.
 
 ```javascript
 const bufferFactory = require('buffer-factory')
-bufferFactory('2b', 'hex')
+bufferFactory.create('2b', 'hex');
+
+// deprecated
+bufferFactory('2b', 'hex');
 ```
 
 ## Implementation

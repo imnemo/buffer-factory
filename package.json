@@ -1,6 +1,6 @@
 {
   "name": "buffer-factory",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Make it no pain to create a Buffer object by encapsulate Buffer.from an new Buffer().",
   "main": "index.js",
   "scripts": {
