@@ -1,4 +1,4 @@
 declare module 'buffer-factory';
-declare function bufferFactory(...bufferParams: any[]): Buffer;
 
-export default bufferFactory;
+export function create(...bufferParams: any[]): Buffer;
+export default function bufferFactory(...bufferParams: any[]): Buffer;

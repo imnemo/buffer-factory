@@ -49,3 +49,4 @@ if (typeof Buffer.from === 'function' && isLargerOrEqual(process.version, "v5.10
 }
 
 module.exports = bufferFactory;
+module.exports.create = bufferFactory;
